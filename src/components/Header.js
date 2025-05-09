@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ setShowCalendly }) => {
   return (
     <header id="header" className="bg-white fixed w-full z-50 shadow-sm">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -16,8 +16,12 @@ const Header = () => {
         </nav>
         <div className="hidden md:flex items-center space-x-4">
           <span className="text-blue-600 font-medium hover:text-blue-700 transition cursor-pointer">Log In</span>
-          <span className="bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition cursor-pointer">Book a Demo</span>
-        </div>
+          <span
+            onClick={() => setShowCalendly(true)}
+            className="bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition cursor-pointer"
+          >
+            Book a Demo
+          </span>        </div>
         <button className="md:hidden text-gray-700">
           <i className="fa-solid fa-bars text-xl"></i>
         </button>

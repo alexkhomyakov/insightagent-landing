@@ -1,29 +1,33 @@
-import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import Layout from './components/Layout';
+// src/App.js
+import React, { useState } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import FeaturesSection from './components/FeaturesSection';
+import Features from './components/FeaturesSection';
 import HowItWorks from './components/HowItWorks';
 import OutputPreview from './components/OutputPreview';
 import DeveloperFeatures from './components/DeveloperFeatures';
-import TargetAudience from './components/TargetAudience';
+import WhoItsFor from './components/TargetAudience';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import CalendlyModal from './components/CalendlyModal';
 
 const App = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [showCalendly, setShowCalendly] = useState(false);
+
   return (
-    <Layout>
-      <Header />
-      <HeroSection />
-      <FeaturesSection />
+    <>
+      <Header setShowCalendly={setShowCalendly}/>
+      <HeroSection setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
+      <Features />
       <HowItWorks />
       <OutputPreview />
       <DeveloperFeatures />
-      <TargetAudience />
-      <CallToAction />
-      <Footer />
-    </Layout>
+      <WhoItsFor />
+      <CallToAction setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
+      <Footer showModal={showModal} setShowModal={setShowModal} />
+      {showCalendly && <CalendlyModal isOpen={showCalendly} onClose={() => setShowCalendly(false)} />}
+    </>
   );
 };
 
