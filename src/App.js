@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Layout from './components/Layout';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';

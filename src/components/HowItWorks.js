@@ -1,3 +1,4 @@
+// src/components/HowItWorks.js
 import React from 'react';
 
 const steps = [
@@ -45,14 +46,14 @@ const HowItWorks = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {steps.map(({ step, title, description, bullets }, index) => (
-            <div key={index} className="relative">
-              <div className="bg-white p-8 rounded-lg shadow-md">
+            <div key={index} className="relative h-full">
+              <div className="bg-white p-8 rounded-lg shadow-md h-full flex flex-col">
                 <div className="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full mb-6 font-bold">
                   {step}
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{title}</h3>
                 <p className="text-gray-700 mb-4">{description}</p>
-                <ul className="text-gray-700 space-y-2">
+                <ul className="text-gray-700 space-y-2 mt-auto">
                   {bullets.map((item, i) => (
                     <li key={i} className="flex items-start">
                       <i className="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
