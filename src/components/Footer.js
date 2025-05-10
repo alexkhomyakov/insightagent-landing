@@ -2,6 +2,23 @@
 import React from 'react';
 
 const Footer = ({ showModal, setShowModal }) => {
+
+  const handleSubmit = (e) => {
+    // You can uncomment this line if using client-side validation
+    // e.preventDefault();
+
+    if (window.gtag) {
+      window.gtag('event', 'form_submission', {
+        event_category: 'Request Access',
+        event_label: 'Early Access Modal',
+      });
+    }
+
+    if (window.plausible) {
+      window.plausible('request-access-submitted');
+    }
+  };
+
   return (
     <>
        {showModal && (
@@ -25,6 +42,7 @@ const Footer = ({ showModal, setShowModal }) => {
               method="POST"
               data-netlify="true"
               action="/thank-you"
+              onSubmit={handleSubmit}
               className="space-y-5"
             >
               <input type="hidden" name="form-name" value="request-access" />

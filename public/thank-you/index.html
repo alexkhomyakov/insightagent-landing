@@ -12,6 +12,16 @@
         font-family: 'Inter', sans-serif;
       }
     </style>
+    <!-- In /public/thank-you.html -->
+    <script>
+      if (window.plausible) plausible('request-access-submitted');
+      if (window.gtag) {
+        gtag('event', 'form_submission', {
+          event_category: 'Request Access',
+          event_label: 'Thank You Page'
+        });
+      }
+    </script>
   </head>
   <body class="bg-gray-50 text-gray-800 flex items-center justify-center h-screen px-4">
     <div class="bg-white max-w-2xl w-full p-10 rounded-xl shadow-lg border border-gray-100 text-center">
