@@ -8,7 +8,7 @@ const Header = ({ setShowCalendly }) => {
 
   return (
     <header className="bg-white fixed w-full z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center space-x-2">
           <FontAwesomeIcon icon={faRobot} className="text-blue-600 text-2xl" />

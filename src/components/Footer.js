@@ -24,7 +24,7 @@ const Footer = ({ showModal, setShowModal }) => {
               name="request-access"
               method="POST"
               data-netlify="true"
-              action="/thank-you.html"
+              action="/thank-you"
               className="space-y-5"
             >
               <input type="hidden" name="form-name" value="request-access" />
