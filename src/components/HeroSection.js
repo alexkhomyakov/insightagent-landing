@@ -62,41 +62,12 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12">
           <div className="lg:w-1/2 w-full">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900 mb-8">
-              Autonomous Expert Interviews. Embedded Into Your Workflow.
+              AI-Powered Expert Interviews. Purpose-Built for Expert Networks.
             </h1>
             <p className="text-xl text-gray-700 mb-10 max-w-xl leading-relaxed">
-              InsightAgent integrates with your systems, understands your research objectives, and conducts multilingual expert interviews—start to finish, with zero operational lift.
+              InsightAgent plugs into your workflow, understands client priorities, and autonomously conducts expert interviews—delivering structured, compliant output at scale.
             </p>
-            <div className="flex items-center mb-10 bg-gray-50 p-5 rounded-lg border border-gray-200">
-              <div className="flex items-center flex-grow">
-                <button
-                  onClick={handleToggle}
-                  className="text-blue-600 hover:text-blue-700 p-2"
-                  id="playButton"
-                >
-                  <FontAwesomeIcon icon={isPlaying ? faStop : faPlay} className="text-2xl" />
-                </button>
-                <div className="mx-4 flex-grow">
-                  <div className="h-2.5 bg-gray-200 rounded-full">
-                    <div
-                      className="h-2.5 bg-blue-600 rounded-full"
-                      style={{ width: `${progress}%` }}
-                    ></div>
-                  </div>
-                </div>
-                <span className="text-sm text-gray-600 font-medium">
-                  {formatTime(duration)}
-                </span>
-              </div>
-              <span className="text-sm text-gray-500 ml-4 font-medium">Sample Interview</span>
-            </div>
-
-            <audio ref={audioRef} preload="auto">
-              <source src="https://productera.s3.us-west-2.amazonaws.com/insightagent-sample.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <span
                 onClick={() => setShowCalendly(true)}
                 className="bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition text-center cursor-pointer text-lg"
@@ -109,6 +80,36 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
               >
                 Request Access
               </span>
+            </div>
+
+            <div className="mb-10">
+              <div className="flex items-center bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <div className="flex items-center flex-grow">
+                  <button
+                    onClick={handleToggle}
+                    className="text-blue-600 hover:text-blue-700 p-2"
+                    id="playButton"
+                  >
+                    <FontAwesomeIcon icon={isPlaying ? faStop : faPlay} className="text-2xl" />
+                  </button>
+                  <div className="mx-4 flex-grow">
+                    <div className="h-2.5 bg-gray-200 rounded-full">
+                      <div
+                        className="h-2.5 bg-blue-600 rounded-full"
+                        style={{ width: `${progress}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                  <span className="text-sm text-gray-600 font-medium">
+                    {formatTime(duration)}
+                  </span>
+                </div>
+                <span className="text-sm text-gray-500 ml-4 font-medium">Sample Interview</span>
+              </div>
+              <audio ref={audioRef} preload="auto">
+                <source src="https://productera.s3.us-west-2.amazonaws.com/insightagent-sample.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
             </div>
           </div>
 

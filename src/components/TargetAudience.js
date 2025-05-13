@@ -1,72 +1,91 @@
 // src/components/TargetAudience.js
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGears, faHandshake, faShieldHalved, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const TargetAudience = () => {
   return (
     <section id="who-its-for" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Who It's For</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Built for Expert Networks</h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            InsightAgent is designed for organizations that conduct expert interviews as part of their research process.
+            InsightAgent empowers expert networks to scale their operations while maintaining the highest quality standards.
           </p>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[ 
-            {
-              id: 'for-hedge-funds',
-              icon: 'fa-chart-pie',
-              title: 'Hedge Funds',
-              desc: 'Streamline expert network calls for investment research while maintaining compliance and generating structured insights.',
-              bullets: [
-                'Automatic compliance monitoring',
-                'Structured data extraction',
-                'Consistent interview quality'
-              ]
-            },
-            {
-              id: 'for-expert-networks',
-              icon: 'fa-network-wired',
-              title: 'Expert Networks',
-              desc: 'Scale your expert interview operations while reducing operational costs and increasing client satisfaction.',
-              bullets: [
-                'Increased capacity',
-                'Consistent quality',
-                'Enhanced deliverables'
-              ]
-            },
-            {
-              id: 'for-research-teams',
-              icon: 'fa-microscope',
-              title: 'Research Teams',
-              desc: 'Enable your team to conduct more expert interviews while maintaining focus on analysis and insights.',
-              bullets: [
-                'Increased research throughput',
-                'Multilingual capabilities',
-                'Standardized output format'
-              ]
-            }
-          ].map(({ id, icon, title, desc, bullets }) => (
-            <div
-              key={id}
-              id={id}
-              className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition"
-            >
-              <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-                <i className={`fa-solid ${icon} text-blue-600 text-xl`}></i>
-              </div>
-              <h3 className="text-xl font-semibold mb-3">{title}</h3>
-              <p className="text-gray-700 mb-4">{desc}</p>
-              <ul className="text-gray-700 space-y-2">
-                {bullets.map((bullet, index) => (
-                  <li key={index} className="flex items-start">
-                    <i className="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition">
+            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
+              <FontAwesomeIcon icon={faGears} className="text-blue-600 text-xl" />
             </div>
-          ))}
+            <h3 className="text-xl font-semibold mb-3">Operations Teams</h3>
+            <p className="text-gray-700 mb-4">
+              Streamline your interview process and reduce operational overhead while maintaining full control and visibility.
+            </p>
+            <ul className="text-gray-700 space-y-2">
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Automated quality assurance</span>
+              </li>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Real-time monitoring</span>
+              </li>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Seamless integration</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition">
+            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
+              <FontAwesomeIcon icon={faHandshake} className="text-blue-600 text-xl" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3">Client Services</h3>
+            <p className="text-gray-700 mb-4">
+              Deliver exceptional value to your clients with comprehensive, consistent, and instantly available interview outputs.
+            </p>
+            <ul className="text-gray-700 space-y-2">
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Enhanced deliverables</span>
+              </li>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Rapid turnaround</span>
+              </li>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Client customization</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition">
+            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
+              <FontAwesomeIcon icon={faShieldHalved} className="text-blue-600 text-xl" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3">Compliance Teams</h3>
+            <p className="text-gray-700 mb-4">
+              Maintain rigorous compliance standards with automated monitoring and comprehensive audit trails.
+            </p>
+            <ul className="text-gray-700 space-y-2">
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Real-time monitoring</span>
+              </li>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Automated flagging</span>
+              </li>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faCheck} className="text-green-500 mt-1 mr-2" />
+                <span>Complete audit trails</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
