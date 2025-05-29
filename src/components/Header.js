@@ -21,7 +21,14 @@ const Header = ({ setShowCalendly }) => {
           <a href="#how-it-works" className="text-gray-700 hover:text-blue-600 whitespace-nowrap">How It Works</a>
           <a href="#output" className="text-gray-700 hover:text-blue-600 whitespace-nowrap">Output</a>
           <a href="#for-developers" className="text-gray-700 hover:text-blue-600 whitespace-nowrap">For Developers</a>
-          <button className="text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap">Log In</button>
+          <a
+            href="https://demo.insightagent.io/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap"
+          >
+          Log In
+          </a>
           <button
             onClick={() => setShowCalendly(true)}
             className="bg-blue-600 text-white px-5 py-2 rounded-md font-medium hover:bg-blue-700 transition whitespace-nowrap"
@@ -56,12 +63,14 @@ const Header = ({ setShowCalendly }) => {
             <a href="#how-it-works" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-blue-600">How It Works</a>
             <a href="#output" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-blue-600">Output</a>
             <a href="#for-developers" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-blue-600">For Developers</a>
-            <button
-              className="text-blue-600 hover:text-blue-700 text-left"
-              onClick={() => setIsMenuOpen(false)}
+            <a
+            href="https://demo.insightagent.io/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap"
             >
-              Log In
-            </button>
+            Log In
+            </a>
             <button
               onClick={() => {
                 setIsMenuOpen(false);
