@@ -3,7 +3,7 @@ import React from 'react';
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="pt-16 pb-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What Makes InsightAgent Different</h2>

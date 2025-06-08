@@ -57,7 +57,7 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
   };
 
   return (
-    <section id="hero" className="pt-24 pb-24 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <section id="hero" className="pt-24 pb-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-6 pt-12">
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12">
           <div className="lg:w-1/2 w-full">
