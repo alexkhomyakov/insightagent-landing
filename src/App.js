@@ -20,7 +20,7 @@ const Home = ({ setShowModal, setShowCalendly }) => (
     <Features />
     <HowItWorks />
     <OutputPreview />
-    <Testimonials />
+    <Testimonials setShowCalendly={setShowCalendly} />
     <DeveloperFeatures />
     <WhoItsFor />
     <CallToAction setShowModal={setShowModal} setShowCalendly={setShowCalendly} />

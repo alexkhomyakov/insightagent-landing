@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Testimonials = () => {
+const Testimonials = ({ setShowCalendly }) => {
+  const navigate = useNavigate();
+
+  const handleBookDemo = () => {
+    navigate('/book-demo');
+  };
+
   const testimonials = [
     {
       quote: "The AI interviewer was well-prepared and asked relevant follow-up questions. The transcript captured all the technical details accurately.",
@@ -105,7 +112,10 @@ const Testimonials = () => {
             <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
               Join leading expert networks and research teams who are already using InsightAgent to deliver higher quality insights.
             </p>
-            <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition">
+            <button 
+              onClick={() => setShowCalendly(true)}
+              className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition"
+            >
               Schedule a Demo
             </button>
           </div>
