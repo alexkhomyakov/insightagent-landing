@@ -1,13 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Testimonials = ({ setShowCalendly }) => {
-  const navigate = useNavigate();
-
-  const handleBookDemo = () => {
-    navigate('/book-demo');
-  };
-
   const testimonials = [
     {
       quote: "The AI interviewer was well-prepared and asked relevant follow-up questions. The transcript captured all the technical details accurately.",
