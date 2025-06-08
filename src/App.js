@@ -1,5 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Features from './components/FeaturesSection';
@@ -10,24 +11,34 @@ import WhoItsFor from './components/TargetAudience';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import CalendlyModal from './components/CalendlyModal';
+import Pricing from './components/Pricing';
+
+const Home = ({ setShowModal, setShowCalendly }) => (
+  <>
+    <HeroSection setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
+    <Features />
+    <HowItWorks />
+    <OutputPreview />
+    <DeveloperFeatures />
+    <WhoItsFor />
+    <CallToAction setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
+  </>
+);
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [showCalendly, setShowCalendly] = useState(false);
 
   return (
-    <>
+    <Router>
       <Header setShowCalendly={setShowCalendly}/>
-      <HeroSection setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
-      <Features />
-      <HowItWorks />
-      <OutputPreview />
-      <DeveloperFeatures />
-      <WhoItsFor />
-      <CallToAction setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
+      <Routes>
+        <Route path="/" element={<Home setShowModal={setShowModal} setShowCalendly={setShowCalendly} />} />
+        <Route path="/pricing" element={<Pricing setShowModal={setShowModal} />} />
+      </Routes>
       <Footer showModal={showModal} setShowModal={setShowModal} />
       {showCalendly && <CalendlyModal isOpen={showCalendly} onClose={() => setShowCalendly(false)} />}
-    </>
+    </Router>
   );
 };
 
