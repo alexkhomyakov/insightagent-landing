@@ -12,6 +12,7 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import CalendlyModal from './components/CalendlyModal';
 import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials';
 
 const Home = ({ setShowModal, setShowCalendly }) => (
   <>
@@ -19,6 +20,7 @@ const Home = ({ setShowModal, setShowCalendly }) => (
     <Features />
     <HowItWorks />
     <OutputPreview />
+    <Testimonials />
     <DeveloperFeatures />
     <WhoItsFor />
     <CallToAction setShowModal={setShowModal} setShowCalendly={setShowCalendly} />
