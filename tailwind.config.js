@@ -5,7 +5,11 @@ module.exports = {
     "./public/index.html"         // optional: includes static HTML
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#2563eb',
+      },
+    },
   },
   plugins: [],
 };

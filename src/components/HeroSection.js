@@ -70,7 +70,7 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <span
                 onClick={() => setShowCalendly(true)}
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition text-center cursor-pointer text-lg"
+                className="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-primary/90 transition text-center cursor-pointer text-lg"
               >
                 Book a Demo
               </span>
@@ -87,7 +87,7 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
                 <div className="flex items-center flex-grow">
                   <button
                     onClick={handleToggle}
-                    className="text-blue-600 hover:text-blue-700 p-2"
+                    className="text-primary hover:text-primary/90 p-2"
                     id="playButton"
                   >
                     <FontAwesomeIcon icon={isPlaying ? faStop : faPlay} className="text-2xl" />
@@ -95,7 +95,7 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
                   <div className="mx-4 flex-grow">
                     <div className="h-2.5 bg-gray-200 rounded-full">
                       <div
-                        className="h-2.5 bg-blue-600 rounded-full"
+                        className="h-2.5 bg-primary rounded-full"
                         style={{ width: `${progress}%` }}
                       ></div>
                     </div>
@@ -116,8 +116,8 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
           <div className="lg:w-1/2 w-full">
             <div className="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 w-full">
               <div className="flex items-center space-x-5 mb-8">
-                <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center">
-                  <FontAwesomeIcon icon={faChartLine} className="text-blue-600 text-2xl" />
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
+                  <FontAwesomeIcon icon={faChartLine} className="text-primary text-2xl" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900">Enhanced Research Workflow</h3>
@@ -133,15 +133,15 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
                   </div>
                   <ul className="space-y-4">
                     <li className="flex items-center text-gray-700">
-                      <FontAwesomeIcon icon={faClock} className="text-blue-600 mr-3 text-lg" />
+                      <FontAwesomeIcon icon={faClock} className="text-primary mr-3 text-lg" />
                       <span className="text-base">60% reduction in research time</span>
                     </li>
                     <li className="flex items-center text-gray-700">
-                      <FontAwesomeIcon icon={faShieldAlt} className="text-blue-600 mr-3 text-lg" />
+                      <FontAwesomeIcon icon={faShieldAlt} className="text-primary mr-3 text-lg" />
                       <span className="text-base">Automated compliance monitoring</span>
                     </li>
                     <li className="flex items-center text-gray-700">
-                      <FontAwesomeIcon icon={faFileAlt} className="text-blue-600 mr-3 text-lg" />
+                      <FontAwesomeIcon icon={faFileAlt} className="text-primary mr-3 text-lg" />
                       <span className="text-base">Structured insights delivery</span>
                     </li>
                   </ul>
@@ -150,7 +150,7 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
                 <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center">
-                      <FontAwesomeIcon icon={faStar} className="text-blue-600 mr-3 text-xl" />
+                      <FontAwesomeIcon icon={faStar} className="text-primary mr-3 text-xl" />
                       <span className="text-base font-medium text-gray-700">Performance Metrics</span>
                     </div>
                     <span className="text-sm bg-green-100 text-green-700 px-3 py-1.5 rounded-full font-medium">Enterprise-Grade</span>
@@ -170,7 +170,7 @@ const HeroSection = ({ setShowModal, setShowCalendly }) => {
 
               <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                 <div className="flex items-center space-x-3">
-                  <FontAwesomeIcon icon={faAward} className="text-blue-500 text-xl" />
+                  <FontAwesomeIcon icon={faAward} className="text-primary/80 text-xl" />
                   <span className="text-base text-gray-600">Trusted by Leading Firms</span>
                 </div>
                 <div className="flex items-center space-x-4">

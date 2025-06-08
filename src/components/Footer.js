@@ -52,7 +52,7 @@ const Footer = ({ showModal, setShowModal }) => {
                   type="text"
                   name="full-name"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div>
@@ -61,7 +61,7 @@ const Footer = ({ showModal, setShowModal }) => {
                   type="email"
                   name="email"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div>
@@ -70,13 +70,13 @@ const Footer = ({ showModal, setShowModal }) => {
                   type="text"
                   name="company"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div className="pt-4 text-right">
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition w-full"
+                  className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition w-full"
                 >
                   Submit Request
                 </button>
@@ -91,7 +91,7 @@ const Footer = ({ showModal, setShowModal }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             <div>
               <div className="flex items-center mb-6">
-                <i className="fa-solid fa-robot text-blue-400 text-2xl mr-2"></i>
+                <i className="fa-solid fa-robot text-primary/60 text-2xl mr-2"></i>
                 <span className="text-white font-bold text-xl">InsightAgent</span>
               </div>
               <p className="mb-6">

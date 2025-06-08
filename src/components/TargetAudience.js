@@ -16,8 +16,8 @@ const TargetAudience = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <FontAwesomeIcon icon={faGears} className="text-blue-600 text-xl" />
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <FontAwesomeIcon icon={faGears} className="text-primary text-xl" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Operations Teams</h3>
             <p className="text-gray-700 mb-4">
@@ -40,8 +40,8 @@ const TargetAudience = () => {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <FontAwesomeIcon icon={faHandshake} className="text-blue-600 text-xl" />
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <FontAwesomeIcon icon={faHandshake} className="text-primary text-xl" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Client Services</h3>
             <p className="text-gray-700 mb-4">
@@ -64,8 +64,8 @@ const TargetAudience = () => {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <FontAwesomeIcon icon={faShieldHalved} className="text-blue-600 text-xl" />
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <FontAwesomeIcon icon={faShieldHalved} className="text-primary text-xl" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Compliance Teams</h3>
             <p className="text-gray-700 mb-4">

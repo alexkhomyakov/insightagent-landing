@@ -14,8 +14,8 @@ const FeaturesSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition h-full">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <i className="fa-solid fa-code text-blue-600 text-xl"></i>
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <i className="fa-solid fa-code text-primary text-xl"></i>
             </div>
             <h3 className="text-xl font-semibold mb-3">Seamless Integration</h3>
             <p className="text-gray-700">
@@ -24,8 +24,8 @@ const FeaturesSection = () => {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition h-full">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <i className="fa-solid fa-brain text-blue-600 text-xl"></i>
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <i className="fa-solid fa-brain text-primary text-xl"></i>
             </div>
             <h3 className="text-xl font-semibold mb-3">Intelligent Interviews</h3>
             <p className="text-gray-700">
@@ -34,8 +34,8 @@ const FeaturesSection = () => {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition h-full">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <i className="fa-solid fa-language text-blue-600 text-xl"></i>
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <i className="fa-solid fa-language text-primary text-xl"></i>
             </div>
             <h3 className="text-xl font-semibold mb-3">Global Coverage</h3>
             <p className="text-gray-700">
@@ -44,8 +44,8 @@ const FeaturesSection = () => {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-100 hover:shadow-md transition h-full">
-            <div className="flex items-center justify-center w-14 h-14 bg-blue-100 rounded-full mb-6">
-              <i className="fa-solid fa-shield-halved text-blue-600 text-xl"></i>
+            <div className="flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-6">
+              <i className="fa-solid fa-shield-halved text-primary text-xl"></i>
             </div>
             <h3 className="text-xl font-semibold mb-3">Compliance First</h3>
             <p className="text-gray-700">

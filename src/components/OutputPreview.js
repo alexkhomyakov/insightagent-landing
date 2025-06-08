@@ -17,7 +17,7 @@ const OutputPreview = () => {
             <div className="bg-gray-100 px-6 py-4 border-b border-gray-200">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <i className="fa-solid fa-file-lines text-blue-600 mr-2"></i>
+                  <i className="fa-solid fa-file-lines text-primary mr-2"></i>
                   <h3 className="font-semibold">Interview with John Doe - Semiconductor Expert</h3>
                 </div>
                 <div className="text-sm text-gray-500">May 2, 2025</div>
@@ -34,15 +34,15 @@ const OutputPreview = () => {
                 </p>
                 <ul className="text-gray-700 space-y-2 mb-3">
                   <li className="flex items-start">
-                    <i className="fa-solid fa-circle text-xs text-blue-600 mt-1.5 mr-2"></i>
+                    <i className="fa-solid fa-circle text-xs text-primary mt-1.5 mr-2"></i>
                     <span>Raw material shortages, particularly in rare earth elements</span>
                   </li>
                   <li className="flex items-start">
-                    <i className="fa-solid fa-circle text-xs text-blue-600 mt-1.5 mr-2"></i>
+                    <i className="fa-solid fa-circle text-xs text-primary mt-1.5 mr-2"></i>
                     <span>Manufacturing bottlenecks at 3nm process nodes</span>
                   </li>
                   <li className="flex items-start">
-                    <i className="fa-solid fa-circle text-xs text-blue-600 mt-1.5 mr-2"></i>
+                    <i className="fa-solid fa-circle text-xs text-primary mt-1.5 mr-2"></i>
                     <span>Geopolitical tensions affecting distribution networks</span>
                   </li>
                 </ul>
@@ -68,15 +68,15 @@ const OutputPreview = () => {
                 </h4>
                 <ul className="text-gray-700 space-y-2">
                   <li className="flex items-start">
-                    <i className="fa-solid fa-circle text-xs text-blue-600 mt-1.5 mr-2"></i>
+                    <i className="fa-solid fa-circle text-xs text-primary mt-1.5 mr-2"></i>
                     <span>Explore impact of automotive sector demand on allocation</span>
                   </li>
                   <li className="flex items-start">
-                    <i className="fa-solid fa-circle text-xs text-blue-600 mt-1.5 mr-2"></i>
+                    <i className="fa-solid fa-circle text-xs text-primary mt-1.5 mr-2"></i>
                     <span>Request clarification on pricing trends for 5nm vs 3nm processes</span>
                   </li>
                   <li className="flex items-start">
-                    <i className="fa-solid fa-circle text-xs text-blue-600 mt-1.5 mr-2"></i>
+                    <i className="fa-solid fa-circle text-xs text-primary mt-1.5 mr-2"></i>
                     <span>Investigate alternative suppliers mentioned for specialized components</span>
                   </li>
                 </ul>
@@ -97,8 +97,8 @@ const OutputPreview = () => {
                   ['fa-forward', 'Follow-up Recommendations', 'AI-generated suggestions for additional research or clarification.']
                 ].map(([icon, title, desc], i) => (
                   <div key={i} className="flex items-start">
-                    <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full mr-4 flex-shrink-0">
-                      <i className={`fa-solid ${icon} text-blue-600`}></i>
+                    <div className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-full mr-4 flex-shrink-0">
+                      <i className={`fa-solid ${icon} text-primary`}></i>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">{title}</h4>
