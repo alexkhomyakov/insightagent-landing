@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import CalendlyModal from './components/CalendlyModal';
 import Testimonials from './components/Testimonials';
 import VettingAgent from './pages/VettingAgent';
+import Pricing from './components/Pricing';
 
 const Home = ({ setShowModal, setShowCalendly }) => (
   <>
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home setShowModal={setShowModal} setShowCalendly={setShowCalendly} />} />
           <Route path="/vetting-agent" element={<VettingAgent setShowModal={setShowModal} setShowCalendly={setShowCalendly} />} />
+          <Route path="/pricing" element={<Pricing setShowModal={setShowModal} />} />
         </Routes>
         <Footer />
         {showModal && (
