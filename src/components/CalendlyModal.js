@@ -2,12 +2,12 @@
 import React from 'react';
 import { PopupModal } from 'react-calendly';
 
-const CalendlyModal = ({ isOpen, onClose }) => {
+const CalendlyModal = ({ onClose }) => {
   return (
     <PopupModal
       url="https://calendly.com/productera/insightagent-demo"
       onModalClose={onClose}
-      open={isOpen}
+      open={true}
       rootElement={document.getElementById('root')}
     />
   );
